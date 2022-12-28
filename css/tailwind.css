@@ -1,0 +1,6 @@
+.hello {
+    color:aliceblue
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
