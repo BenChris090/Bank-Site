@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE-BANK | HOME</title>
+    <link href="/build/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="images/ICE_LOGO_temp_3.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+    </style>
+</head>
+<body class="w-screen lg:overflow-x-hidden lg:overflow-y-auto">
+    <!-- Nav Starts Here -->
+    <!-- My Mobile Nav Starts Here -->
+    <div id="mNav" class="h-screen w-0 z-0 fixed left-0 top-0 bg-black overflow-x-hidden pt-4 ease-in duration-500">
+        <a href="javascript:void(0)"><i class="fas fa-times fa-x text-cyan-500 absolute top-3 right-6" onclick="closeNav()"></i></a>
+        <a href="#" class="text-cyan-500 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Home</a></li>
+        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Our Stories</a></li>
+        <a href="pricing.html" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Pricing</a></li>
+        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Support</a></li>
+        <a href="login.html" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Sign In</a></li>
+        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Get Started</a></li>
+    </div>
+    <!-- My Mobile Nav Ends Here -->
+    <nav id="main" class="w-screen flex justify-between bg-white px-2 py-2 lg:shadow-lg lg:shadow-grey-700 lg:px-6 lg:space-y-4 lg:sticky lg:top-0">
+        <a href="index.html" class="flex items-center">
+            <img src="images/ICE_LOGO_temp_3.png" class="h-12 mr-3 sm:h-16 lg:h-20">
+            <span class="self-center text-xl font-semibold whitespace-nowrap text-cyan-500 lg:text-4xl">ICE-BANK</span>
+        </a>
+        <ul class="flex space-x-5 lg:hidden">
+            <li id="day" class="hidden"><i class="fas fa-sun fa-x text-cyan-500 mt-5" onclick="mob_lMode()"></i></li>
+            <li id="night"><i class="fas fa-moon fa-x text-cyan-500 mt-5" onclick="mob_nMode()"></i></li>
+            <li><i class="fas fa-bars fa-x text-cyan-500 mt-5" onclick="openNav()"></i></li>
+        </ul>
+        <!-- My Desktop Nav Starts Here -->
+        <ul class="hidden items-center text-center lg:flex lg:space-x-10 lg:pb-5">
+            <li><a href="#" class="text-black text-xl hover:text-cyan-500 ease-in duration-500"><b>CONTACT <span>US</span></b></a></li>
+            <li><a href="pricing.html" class="text-black text-xl hover:text-cyan-500 ease-in duration-500"><b>ABOUT <span>US</span></b></a></li>
+            <li><a href="#" class="text-black text-xl hover:text-cyan-500 ease-in duration-500"><b>OTHER <span>PROJECTS</span></b></a></li>
+            <li id="days" class="hidden"><i class="fas fa-sun fa-2x text-black ml-32 hover:text-cyan-500 ease-in duration-500" onclick="lMode()"></i></li>
+            <li id="nights"><i class="fas fa-moon fa-2x text-black ml-32 hover:text-cyan-500 ease-in duration-500" onclick="nMode()"></i></li>
+            <li><a href="login.html" class="text-black border-2 border-black rounded-3xl px-4 hover:text-cyan-500 hover:border-cyan-500 border-2 ease-in duration-500 text-xl">LOG OUT</a></li>
+        </ul>
+        <!-- My Desktop Nav Ends Here -->
+    </nav>
+    <main class="w-screen mt-7 lg:justify-around lg:justify-center  px-8 bg-gray-100 rounded-xl shadow-2xl lg:ml-20 lg:space-x-auto lg:pl-32 lg:mx-auto lg:max-w-6xl lg:mx-10 lg:mt-10">
+        <div class="w-1/4 mt-6 mb-6 mx-5 block bg-cyan-700">
+            <h1 class="text-cyan-500 justify-around justify-center text-center text-2xl lg:text-5xl"><b>20,000.00</b></h1>
+        </div>
+        <div id="txt1" class="space-y-2 lg:space-y-1 w-1/2 pt-7 lg:w-1/2 lg:pt-16 lg:mx-auto lg:ml-0">
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum non ipsam optio quaerat! Earum iure tempora quae facilis omnis eos dicta commodi veritatis a, repudiandae ipsum blanditiis cum quaerat nam.</p>
+            <ul class="flex lg:mb-56 lg:p-0">
+                <li><i id="txt3" class="fas fa-at fa-2x text-black hover:text-cyan-500 ease-in duration-500"></i></li>
+                <li><i id="txt4" class="fab fa-twitter fa-2x text-black lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></li>
+                <li><i id="txt5" class="fab fa-github fa-2x text-black lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></li>
+                <li><i id="txt6" class="fab fa-linkedin fa-2x text-black lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
