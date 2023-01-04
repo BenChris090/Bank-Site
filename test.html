@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="icon" href="images/ICE_LOGO_temp_3.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/index.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
     </style>
@@ -17,12 +17,14 @@
 <body class="w-screen lg:overflow-x-hidden lg:overflow-y-auto">
     <!-- Nav Starts Here -->
     <!-- My Mobile Nav Starts Here -->
-    <div id="mNav" class="h-screen w-96 hidden z-0 fixed left-0 top-0 bg-black overflow-x-hidden pt-4 ease-in duration-500">
+    <div id="mNav" class="h-screen w-0 z-0 fixed left-0 top-0 bg-black overflow-x-hidden pt-4 ease-in duration-500">
         <a href="javascript:void(0)"><i class="fas fa-times fa-x text-cyan-500 absolute top-3 right-6" onclick="closeNav()"></i></a>
-        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-sm"><b>CONTACT <span>US</span></b></a></li>
-        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-sm"><b>ABOUT <span>US</span></b></a></li>
-        <a href="pricing.html" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-sm"><b>OTHER <span>PROJECTS</span></b></a></li>
-        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-sm"><b>SIGN UP</b></a></li>
+        <a href="#" class="text-cyan-500 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Home</a></li>
+        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Our Stories</a></li>
+        <a href="pricing.html" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Pricing</a></li>
+        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Support</a></li>
+        <a href="login.html" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Sign In</a></li>
+        <a href="#" class="text-gray-200 mt-5 text-center space-y-2 block hover:text-yellow-400 ease-in duration-500 text-sm">Get Started</a></li>
     </div>
     <!-- My Mobile Nav Ends Here -->
     <nav id="main" class="w-screen flex justify-between bg-white px-2 py-2 lg:shadow-lg lg:shadow-grey-700 lg:px-6 lg:space-y-4 lg:sticky lg:top-0">
@@ -67,30 +69,14 @@
             </div>
         </div>
     </main>
-    <section class="w-96 mx-auto mt-7 flex space-x-2 justify-center lg:justify-around px-6 py-6 bg-gray-100 rounded-xl shadow-2xl lg:ml-20 lg:space-x-auto lg:pl-32 lg:mx-auto lg:max-w-6xl lg:mx-10 lg:mt-10">
-        <div class="text-center p-2">
-            <div class="flex p-4 space-x-4 bg-white rounded-full">
-                <i class="fas fa-user fa-2x text-cyan-500 hover:text-cyan-500 ease-in duration-500" onclick="toggleSeen()"></i>
-            </div>
-            <p>Profile</p>
+    <section class="w-96 mx-auto mt-7 flex space-x-2 lg:justify-around lg:justify-center  px-6 bg-gray-100 rounded-xl shadow-2xl lg:ml-20 lg:space-x-auto lg:pl-32 lg:mx-auto lg:max-w-6xl lg:mx-10 lg:mt-10">
+        <div class="w-36 flex mt-6 mb-6 pl-2 space-x-4 bg-white">
+            <h1 class="text-cyan-500 justify-around justify-center text-center text-xl lg:text-5xl"><b>20,000.00</b></h1>
+            <i class="fas fa-eye fa-x text-cyan-500 my-2 hover:text-cyan-500 ease-in duration-500" onclick="toggleSeen()"></i>
         </div>
-        <div class="text-center p-2">
-            <div class="flex p-4 space-x-4 bg-white rounded-full">
-                <i class="fas fa-piggy-bank fa-2x text-cyan-500 hover:text-cyan-500 ease-in duration-500" onclick="toggleSeen()"></i>
-            </div>
-            <p>Deposit</p>
-        </div>
-        <div class="text-center p-2">
-            <div class="flex p-4 space-x-4 bg-white rounded-full">
-                <i class="fas fa-money-bill-wave fa-2x text-cyan-500 hover:text-cyan-500 ease-in duration-500" onclick="toggleSeen()"></i>
-            </div> 
-            <p>Withdraw</p>
-        </div>
-        <div class="text-center p-2">
-            <div class="flex p-4 space-x-4 bg-white rounded-full">
-                <i class="fas fa-paper-plane fa-2x text-cyan-500 hover:text-cyan-500 ease-in duration-500" onclick="toggleSeen()"></i>
-            </div>
-            <p>Transfer</p>
+        <div class="w-1/2 flex my-auto bg-cyan-700">
+                <button
+                    class="w-44 py-auto text-sm border-2 ml-6 border-cyan-500 bg-cyan-500 rounded-xl hover:bg-cyan-700 hover:border-cyan-700 border-2 ease-in duration-500"><b>Transaction History</b></button>
         </div>
     </section>
 </body>
