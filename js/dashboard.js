@@ -25,3 +25,19 @@ function mob_lMode() {
     document.getElementById("day").style.display = "none";
 }
 // mobile functions ends here
+
+// desktop functions start here
+function nMode() {
+    document.body.style.backgroundColor = "black";
+    // document.getElementById("relText").style.color = "white";
+    document.getElementById("nights").style.display = "none";
+    document.getElementById("days").style.display = "flex";
+    // 0px 15px 10px -15px #111
+  }
+  
+  function lMode() {
+    document.getElementById("nights").style.display = "flex";
+    document.body.style.backgroundColor = "white";
+    // document.getElementById("relText").style.color = "black";
+    document.getElementById("days").style.display = "none";
+  }
